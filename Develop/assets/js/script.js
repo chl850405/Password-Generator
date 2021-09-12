@@ -1,4 +1,4 @@
-function generatePasswordInfo() {
+
 
  //password length
   var getPasswordLength = parseInt(prompt("Choose the number of charaters your password will contain."));
@@ -16,34 +16,21 @@ function generatePasswordInfo() {
   }
 
   // password criteria
-  var includeLowercase = window.confirm("Click OK to include lowercase characters.");
+  var includeLowercase = window.confirm("Click OK to include lowercase letters.");
 
-  var includeUppercase = window.confirm("Click OK to include uppercase characters.");
+  var includeUppercase = window.confirm("Click OK to include uppercase letters.");
 
   var includeNumbers = window.confirm("Click OK to include numbers.");
 
-  var includeLowercase = window.confirm("Click OK to include  symbols.");
+  var includeSymbols = window.confirm("Click OK to include  symbols.");
 
   if (!includeLowercase && !includeUppercase && !includeNumbers && includeSymbols)
   alert("Minimum of 1 character type required!")
 
-  //display password
-  var passwordInfo = {
-  passwordLength: getPasswordLength,
-  passwordLowerCase: includeLowercase,
-  passwordUppercase: includeUppercase,
-  passwordNumbers: includeNumbers,
-  passwordsymbols: includeSymbols
-};
-
-  return passwordInfo;
-}
-
 //create random password from charCode
-function generatePassword(){
+function generatePassword() {
 
-// random lowercase
-function getRandomLower() {
+var next = function getRandomLower() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
 
@@ -58,19 +45,11 @@ function getRandomNumber() {
 }
 
 // random symbol
-function getRandomSymbol() {
+var w =function getRandomSymbol() {
   var symbols = '!@#$%^&*(){}=<>/,.';
   return symbols[Math.floor(Math.random() * 26) + 97];
 }
 
-//displays password
-for (var i = 0; i < passwordIncludes.passwordLength; i++) {
-  var c = getRandomChar(availableCharacters);
-
-  generatedPassword.join("");
-}
-
-return generatePassword.push(c);
 }
 
 // Get references to the #generate element
