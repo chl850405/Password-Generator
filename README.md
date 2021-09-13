@@ -43,7 +43,7 @@
   text-align: center
   cursor: pointer
 
-  * Password
+* Password
   -webkit-appearance: none
   -moz-appearance: none
   appearance: none
@@ -65,51 +65,54 @@
 
   ## JavaScript
 
-  * Arrays
-var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-var lowercase = "abcdefghijklmnopqrstuvwxyz"
-var numbers = "1234567890"
-var symbols = "!@#$%^&*()+[]{}"
+* Arrays
+    var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    var lowercase = "abcdefghijklmnopqrstuvwxyz"
+    var numbers = "1234567890"
+    var symbols = "!@#$%^&*()+[]{}"
 
 * Variables
-var length = ""
-var confirmLowercase
-var confirmUppercase
-var confirmNumbers
-var confirmSymbols
-var characters = uppercase + lowercase + numbers + symbols
-var passwordFinal
+    var length = ""
+    var confirmLowercase
+    var confirmUppercase
+    var confirmNumbers
+    var confirmSymbols
+    var characters = uppercase + lowercase + numbers + symbols
+    var passwordFinal
 
 * Generate Password
-var passwordFinal = ""; 
+    var passwordFinal = ""; 
   for (var i = 0; i < length; i++) {
   passwordFinal =+ characters[ Math.floor(Math.random() * characters.length)] + passwordFinal;
   }
   return passwordFinal;
 
-  * Password Length
+* Password Length
   function generatePassword() { 
-var passwordFinal = ""; 
+    var passwordFinal = ""; 
   for (var i = 0; i < length; i++) {
   passwordFinal =+ characters[ Math.floor(Math.random() * characters.length)] + passwordFinal;
   }
   return passwordFinal;
 
-  * Password Criteria
+* Password Criteria
     
     + lower case letters
+
     var confirmLowercase = window.confirm("Click OK to include lowercase letters.");
     if (confirmLowercase === true){
     } else
 
      + uppercase letters
+
      var confirmUppercase = window.confirm("Click OK to include uppercase letters.");
     if (confirmUppercase === true){
     alert ('Your password will contain uppercase characters.')
     } else
 
     + symbols
-    ar confirmSymbols = window.confirm("Click OK to include  symbols.");
+
+    var confirmSymbols = window.confirm("Click OK to include  symbols.");
     if (confirmSymbols === true){
     alert ('Your password will contain symbols.')
     } else {
@@ -118,10 +121,16 @@ var passwordFinal = "";
     }
 
     + numbers
+
     ("Click OK to include numbers.");
     if (confirmNumbers === true){
     alert ('Your password will contain numbers.')
     } else
 
-![The mockup](./assets/images/password-generator.png) Password-Generator
+![The mockup](./Develop/assets/images/password-generator.png) Password-Generator
+
+https://github.com/chl850405/Password-Generator.git
+
+https://chl850405.github.io/Password-Generator/
+
 
