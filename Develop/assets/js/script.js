@@ -60,7 +60,7 @@ var passwordFinal = "";
   for (var i = 0; i < length; i++) {
   passwordFinal =+ characters[ Math.floor(Math.random() * characters.length)] + passwordFinal;
   }
-  return passwordFinal();
+  return passwordFinal;
 }
 
 // Get references to the #generate element
