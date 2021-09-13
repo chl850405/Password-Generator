@@ -95,7 +95,7 @@
   }
   return passwordFinal;
 
-* Password Criteria
+* Password Characters
     
     + lower case letters
 
