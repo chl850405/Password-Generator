@@ -25,6 +25,7 @@ function getLength() {
 
     if (length > 128) {
       alert("A maximum number of 128 characters can be used!")
+      return getLength()
     };
 
     if (isNaN(length)) {
